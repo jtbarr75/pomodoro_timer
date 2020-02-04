@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomodoro</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/2967b1bb61.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+    <div class = "container center"></div>
+        <div class = "container center col fixed-width">
+            <div class = "container center">
+                <h1>Pomodoro Clock</h1>
+            </div>
+            <div class = "container center row outer-box fixed-width">
+                <div class = "container center col">
+                    <button id = "session-button" class = "wide">Session</button>
+                    <div class = "container center row">
+                        <button id = "session-decrease" class = "left"><i class = "fas fa-angle-double-down"></i></button>
+                        <div id = "session-label" class = "thin-spacing">25</div>
+                        <button id = "session-increase" class = "right"><i class = "fas fa-angle-double-up"></i></button>
+                    </div>
+                </div>
+                <div class = "container center col">
+                    <button id = "break-button" class = "wide">Break</button>
+                    <div class = "container center row">
+                        <button id = "break-decrease" class = "left"><i class = "fas fa-angle-double-down"></i></button>
+                        <div id = "break-label" class = "thin-spacing">5</div>
+                        <button id = "break-increase" class = "right"><i class = "fas fa-angle-double-up"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class = "container center col outer-box fixed-width wide-spacing">
+                <div class = "container center">
+                    <h2 id = "session-or-break" class = "wide-spacing">Session</h2>
+                </div>
+                <div class = "container center">
+                    <div id = "timer">25:00</div>
+                </div>
+                <div class = "container center row">
+                    <button id = "start" class = "x-wide-spacing"><i class = "fas fa-play"></i></button>
+                    <button id = "stop" class = "x-wide-spacing"><i class = "fas fa-stop"></i></button>
+                    <button id = "reset" class = "x-wide-spacing"><i class = "fas fa-redo-alt"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<audio id = "ding" src = "ding-sound-effect.mp3"></audio>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
